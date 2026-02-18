@@ -21,7 +21,7 @@ services:
   nginx:
     image: nginx:alpine
     restart: unless-stopped
-   expose:
+    expose:
       - "80"
     volumes:
       - ./nginx:/etc/nginx/conf.d:ro
